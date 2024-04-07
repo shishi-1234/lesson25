@@ -5,13 +5,25 @@
     <title>Главная страница</title>
 </head>
 <body>
-
-<h1>Привет путник</h1>
-<p>Это первая страница на Flask</p>
 <ul>
     <li>
         <a href="/contacts/">Котнакты</a>
     </li>
+    <li>
+        <a href="/">Главная</a>
+    </li>
+    <li>
+        <a href="/results/">Результаты</a>
+    </li>
 </ul>
+
+<h1>Привет путник</h1>
+<p>Это первая страница на Flask</p>
+<br>Город:{{main_data["Город"]}}
+    <br>Район:{{main_data['Район']}}
+   <br> Компания:{{main_data["Компания"]}}
+<br>Имя:{{ context['name'] }}
+<br>Возраст:{{ context['age'] }}
+<br>Специализация:{{context['spes']  }}
 </body>
 </html>

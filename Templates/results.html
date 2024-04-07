@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body>
+<h1>
+    Небольшой список язык программирования
+</h1>
+{% if data %}
+<ul>
+    {% for item in data %}
+    <li>
+        {{ item }}
+    </li>
+    {% endfor %}
+
+</ul>
+{% else %}
+Данных нет
+{% endif %}
+</body>
+</html>
